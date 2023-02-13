@@ -83,3 +83,40 @@
 .show-offers{
     font-size: 20px;
 }
+
+.package-cards{
+    width: 75%;
+    margin: auto;
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+   column-gap: 20px;
+}
+
+.sub-images{
+ width:50% !important;
+ height: 100px !important;
+}
+
+.pic-grid{
+    display: flex;
+     width: 100%;
+    justify-items: center;
+    align-items: center;
+    column-gap: 10px;
+
+}
+.main-img{
+    width: 100% !important;
+    height: 300px !important;
+   
+ 
+}
+.img-container{
+    justify-self: flex-start;
+    width: 100%;
+}

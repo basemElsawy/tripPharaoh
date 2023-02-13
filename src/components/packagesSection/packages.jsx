@@ -4,13 +4,9 @@ import Image1 from '../../components/images/Kingtut.jpg'
 import PackageCards from './packageCards'
 import Data from './data'
 
-let imgs = []
+
 
 class Packages extends React.Component {
-
-
-   
-
 
 
 
@@ -41,11 +37,11 @@ class Packages extends React.Component {
                 <div className='trip-packages'>
                     {Data.map((val, id) => {
                         return (
-                            <PackageCards key={id} imageMain={val.imageMain} tripName={val.tripName} tripDetails={val.tripDetails} subImg={val.subImg} />
-                         
+                            <PackageCards key={id} imageMain={val.imageMain} tripName={val.tripName} tripDetails={val.tripDetails} subImg={val.subImg} tripPrice={val.tripPrice} />
+
                         )
                     })}
-                    
+
                 </div>
             </section>
         )
