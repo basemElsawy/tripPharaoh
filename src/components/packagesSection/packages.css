@@ -1,0 +1,80 @@
+.packages-container{
+    height: auto;
+    background-image: url(/src/components/images/background-packages.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: var(--bg-color);
+    background-blend-mode: overlay;
+    padding: 50px;
+    margin-bottom: 100px;
+    color: white;
+}
+.packages-headers h1{
+    font-size: var(--h1-font-size);
+    color: var(--text-color);
+   
+    text-align: center;
+
+}
+.packages-headers{
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     row-gap: 5px;
+}
+
+.king-tut-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    outline: 2px solid var(--text-color);
+    /* justify-self: flex-end; */
+}
+
+.packages-wrapper{
+    width: 80%;
+    
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    row-gap:50px ;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.image-wrapper{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns:repeat(2,1fr) ;
+  
+}
+.image-wrapper .text--wrapper{
+  background-color: rgba(255, 255, 255, 0.688);
+  border-radius: 10px;
+  color: rgba(0, 0, 0, 0.715);
+  font-weight: bold;
+  text-align: left;
+  padding:50px;
+  transform: translateX(-50px);
+  position: relative;
+}
+
+.text--wrapper::before{
+    content: '';
+    border-top:10px solid transparent ;
+    border-bottom:10px solid transparent ;
+    border-right:15px solid rgba(255, 255, 255, 0.688) ;
+    position: absolute;
+    left: -0.875rem;
+    top: 45%;
+    
+}
+
+
+.show-offers{
+    font-size: 20px;
+}

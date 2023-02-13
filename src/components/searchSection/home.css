@@ -9,6 +9,7 @@
     background-size:cover ;
     background-color: var(--bg-color);
     background-blend-mode: overlay;
+    background-attachment: fixed;
 
 }
 .section-title{
@@ -19,6 +20,9 @@
       margin-bottom:30px ;
       
 
+}
+.home{
+    margin-bottom:75px ;
 }
 
 @keyframes text-up{
