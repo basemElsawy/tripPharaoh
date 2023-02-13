@@ -1,6 +1,5 @@
-
-#packages{
-    margin-bottom: 100px;
+.containing{
+    margin-bottom: 50px;
 }
 
 .packages-container{
@@ -92,26 +91,33 @@
 .cards-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    justify-items: center;
-    align-items: center;
-   column-gap: 20px;
+    justify-items: flex-start;
+    align-items: flex-start;
+    column-gap: 20px;
 }
 
 .sub-images{
- width:50% !important;
+ width:100% !important;
  height: 100px !important;
+ transition: .3s ease-in-out;
+}
+.sub-images:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    border: 5px solid var(--bg-color);
 }
 
 .pic-grid{
-    display: flex;
+    display: grid;
      width: 100%;
+     grid-template-columns: repeat(4,1fr);
     justify-items: center;
     align-items: center;
-    column-gap: 10px;
+    column-gap: 5px;
 
 }
 .main-img{
-    width: 100% !important;
+    width: 70% !important;
     height: 300px !important;
    
  
@@ -120,3 +126,31 @@
     justify-self: flex-start;
     width: 100%;
 }
+.details-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 50px;
+    position: relative;
+    height: 100%;
+
+}
+.detail-header{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+    justify-self: flex-start;
+}
+
+.price-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.price-container span {
+    font-weight: bolder;
+    font-size: 20px;
+}
+

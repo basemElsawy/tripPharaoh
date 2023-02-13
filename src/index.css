@@ -51,3 +51,28 @@ a:hover{
 .grid{
   display: grid;
 }
+
+
+.underline{
+  position: relative;
+ color: var(--bg-color);
+ font-weight: bold;
+}
+.underline:hover{
+  color: var(--bg-color);
+}
+
+.underline::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--bg-color);
+  transition: .3s ease;
+  border-radius: 3px;
+}
+.underline:hover::before{
+  width: 100%;
+}

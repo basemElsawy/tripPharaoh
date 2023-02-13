@@ -8,7 +8,7 @@ import SubImg5 from '../../components/images/packages/muhammedali.jpg'
 import SubImg6 from '../../components/images/packages/musuemEgy.jpg'
 import SubImg7 from '../../components/images/packages/salahuddien.jpg'
 import SubImg8 from '../../components/images/packages/almoez.jpg'
-import imageMain3 from '../../components/images/packages/Giza.jpg'
+import imageMain3 from '../../components/images/packages/pyramids.png'
 import SubImg9 from '../../components/images/packages/khan.jpg'
 import SubImg10 from '../../components/images/packages/sphinx.jpg'
 import SubImg11 from '../../components/images/packages/bazaar.jpg'
@@ -30,15 +30,15 @@ const data = [
         tripName: 'Around Cairo',
         tripDetails: 'Cairo tower + Qahera\'at al moez ST + egyptian museum + civilization museum + salahuddien castle + muhammed ali mosque ',
         tripPrice: '70$',
-        imageMain: imageMain3,
+        imageMain: imageMain2,
         subImg: [SubImg5, SubImg6, SubImg7, SubImg8]
     },
     {
         id: '3',
-        tripName: 'From east to west tour',
+        tripName: 'From west to east tour',
         tripDetails: 'Giza pyramids + sphinx + Giza bazaar tour +Khan Khalil + Qaher\'at Al Moez ',
         tripPrice: '70$',
-        imageMain: imageMain2,
+        imageMain: imageMain3,
         subImg: [SubImg9, SubImg10, SubImg11, SubImg12]
     }
 ]
