@@ -1,8 +1,17 @@
 import React from 'react'
 import './packages.css'
 import Image1 from '../../components/images/Kingtut.jpg'
+import PackageCards from './packageCards'
+import Data from './data'
+
+let imgs = []
 
 class Packages extends React.Component {
+
+
+   
+
+
 
 
     render() {
@@ -28,6 +37,15 @@ class Packages extends React.Component {
                             <button className='btn show-offers'>Show offers</button>
                         </div>
                     </div>
+                </div>
+                <div className='trip-packages'>
+                    {Data.map((val, id) => {
+                        return (
+                            <PackageCards key={id} imageMain={val.imageMain} tripName={val.tripName} tripDetails={val.tripDetails} subImg={val.subImg} />
+                         
+                        )
+                    })}
+                    
                 </div>
             </section>
         )

@@ -1,3 +1,8 @@
+
+#packages{
+    margin-bottom: 100px;
+}
+
 .packages-container{
     height: auto;
     background-image: url(/src/components/images/background-packages.jpg);
@@ -7,7 +12,7 @@
     background-color: var(--bg-color);
     background-blend-mode: overlay;
     padding: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 25px;
     color: white;
 }
 .packages-headers h1{

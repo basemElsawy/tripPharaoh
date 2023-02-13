@@ -1,21 +1,34 @@
 import React from 'react'
+import './packages.css'
 
-const PackageCards = () => {
+const PackageCards = (props) => {
     return (
         <section className="package-cards">
             <div className='cards-container'>
-                <h2 className=''>trip name</h2>
                 <div className="img-container">
-                    <img src="" alt="" />
+                    <img src={props.imageMain} width='200px' height='200px' alt="" />
                 </div>
                 <div className="details-container">
-                    <h3>Details</h3>
-                    <p>trip details</p>
-                    <button>
-                        Book now
-                    </button>
+                    <div>
+                        <h2 className='detail-header'>{props.tripName}</h2>
+                    </div>
+                    <div className='detials__contained'>
+                        <h3 className='Details'>Details</h3>
+                        <p>{props.tripDetails}</p>
+                        <div className="price-container">
+                            <span>{props.tripPrice}</span>
+                            <a href='#'>
+                                Book now
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
+            </div>
+            <div>
+                <img src={props.subImg[0]} width='200px' height='200px' alt="" />
+                <img src={props.subImg[1]} width='200px' height='200px' alt="" />
+                <img src={props.subImg[2]} width='200px' height='200px' alt="" />
             </div>
         </section>
     )
