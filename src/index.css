@@ -76,3 +76,6 @@ a:hover{
 .underline:hover::before{
   width: 100%;
 }
+.yellow-txt{
+  color: var(--text-color);
+}
