@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './components/navbar/Navbar'
 import Home from './components/searchSection/Home'
 import Packages from './components/packagesSection/packages'
+import PackageCards from './components/packagesSection/packageCards'
 const App = () => {
   return (
     <>
@@ -9,6 +10,8 @@ const App = () => {
       <main>
         <Home className='home-sect' />
         <Packages />
+
+
       </main>
     </>
   )

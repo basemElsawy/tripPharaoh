@@ -98,22 +98,26 @@
 
 .sub-images{
  width:100% !important;
- height: 100px !important;
+ height: 150px !important;
  transition: .3s ease-in-out;
 }
 .sub-images:hover{
     transform: scale(1.05);
     cursor: pointer;
-    border: 5px solid var(--bg-color);
+    border: 5px solid var(--text-color);
 }
 
 .pic-grid{
     display: grid;
      width: 100%;
+     height: fit-content;
      grid-template-columns: repeat(4,1fr);
     justify-items: center;
     align-items: center;
-    column-gap: 5px;
+    column-gap: 10px;
+    background-color: var(--bg-color);
+    padding: 10px 20px;
+    border-radius: 0px 0px 10px 10px;
 
 }
 .main-img{
@@ -153,4 +157,6 @@
     font-weight: bolder;
     font-size: 20px;
 }
+
+
 

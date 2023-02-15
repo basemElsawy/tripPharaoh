@@ -7,7 +7,10 @@ import Data from './data'
 
 
 class Packages extends React.Component {
+    constructor(props) {
+        super(props)
 
+    }
 
 
     render() {
@@ -43,6 +46,7 @@ class Packages extends React.Component {
                     })}
 
                 </div>
+
             </section>
         )
     }
