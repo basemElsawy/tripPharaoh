@@ -9,6 +9,10 @@ body{
   height: auto;
 }
 
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
 
 :root{
   --first-section-Fsize:95px;

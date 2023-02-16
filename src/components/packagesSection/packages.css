@@ -142,8 +142,9 @@
     justify-content: flex-start;
     row-gap: 50px;
     position: relative;
-    height: 95%;
+    height: 100%;
     padding: 10px;
+    
     border-radius: 10px 10px 0px 0px;
     box-shadow: 0px 0px 70px 20px rgba(128, 128, 128, 0.245) ;
 
@@ -161,7 +162,7 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    bottom: 5%;
+    bottom: -100px;
     right: 5%;
 }
 .price-container span {
@@ -176,29 +177,34 @@
  transform: translateY(-100px);
  z-index: -10;
 opacity: 0;
-display: none;
-
+ 
+  transition: 1s all;
 }
-.drop-down-animation{
-    animation: drop-down 1s ease-in-out forwards;
+
+.active-packages div{
+ 
+
+ 
     
+    animation: drop-down 1s ease-in-out forwards;
 }
 
-@keyframes drop-down{
+
+
+
+
+@keyframes drop-down {
     0%{
         height: 0;
         transform: translateY(-100px);
         z-index: -10;
        opacity: 0;
-       display: none;
+      
     }
 
-    15%{
-        display: inline;
-    }
 
     35%{
-        height: auto;
+        height: 80%;
         transform: translateY(0px);
     }
     75%{
@@ -207,4 +213,12 @@ display: none;
     100%{
         z-index: 1;
     }
+}
+
+
+.show-offers{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
