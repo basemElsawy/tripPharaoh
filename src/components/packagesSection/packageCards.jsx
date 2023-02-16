@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './packages.css'
-import Data from './data';
+
 import PicsArray from './PicsArray'
 
 
@@ -50,20 +50,24 @@ const PackageCards = (props) => {
                             if (props.tripName === 'Around giza') {
                                 if (val.category === 'Giza-tour-big') {
                                     return (
-                                        <img loading='lazy' src={val.value} key={val.id} onClick={() => {
-                                            handleClick(i)
-                                        }} className='sub-images' />
+                                        <div className='sub-images' data-title={val.title} >
+                                            <img loading='lazy' src={val.value} key={val.id} onClick={() => {
+                                                handleClick(i)
+                                            }} />
+                                        </div>
                                     )
                                 }
                             }
                             if (props.tripName === 'Around Cairo') {
                                 if (val.category === 'Cairo-tour-big') {
                                     return (
-                                        <img loading='lazy' src={val.value} key={val.id}
-                                            onClick={() => {
-                                                handleClick(i)
-                                            }}
-                                            className='sub-images' />
+                                        <div className='sub-images' data-title={val.title}>
+                                            <img loading='lazy' src={val.value} key={val.id}
+                                                onClick={() => {
+                                                    handleClick(i)
+                                                }}
+                                            />
+                                        </div>
                                     )
                                 }
 
@@ -72,11 +76,13 @@ const PackageCards = (props) => {
                             if (props.tripName === 'From west to east tour') {
                                 if (val.category === 'Giza-tour-small') {
                                     return (
-                                        <img loading='lazy' src={val.value} key={val.id}
-                                            onClick={() => {
-                                                handleClick(i)
-                                            }}
-                                            className='sub-images' />
+                                        <div className='sub-images' data-title={val.title}>
+                                            <img loading='lazy' src={val.value} key={val.id}
+                                                onClick={() => {
+                                                    handleClick(i)
+                                                }}
+                                            />
+                                        </div>
                                     )
                                 }
 

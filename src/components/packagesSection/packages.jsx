@@ -9,7 +9,7 @@ import Data from './data'
 const Packages = (props) => {
 
     const [dropDown, setDropDown] = useState(false)
-    const [valueOfEl, setValue] = useState({
+    const [valueOfEl] = useState({
         ifClickTrue: <div className='show-offers btn'> <span>show offers</span><span>&#x25BC;</span> </div>
         , ifClickFalse: <div className='show-offers btn'> <span>Close offers</span><span>&#x25B2;</span> </div>
     })
@@ -51,6 +51,7 @@ const Packages = (props) => {
                 </div>
             </div>
             <div id='packages-menu' className={dropDown ? 'active-packages' : 'trip-packages'}>
+                
                 {Data.map((val, id) => {
                     return (
                         <div>
