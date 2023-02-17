@@ -25,7 +25,7 @@ const PicsArray = [
     { id: 8, category: 'Cairo-tour-big', title: 'Qaherat al moez', value: SubImg8 },
     { id: 9, category: 'Giza-tour-small', title: 'khan khalil ST', value: SubImg9 },
     { id: 10, category: 'Giza-tour-small', title: 'The great sphinx', value: SubImg10 },
-    { id: 11, category: 'Giza-tour-small', title: 'Egypt\'s famous bazaars', value: SubImg11 },
+    { id: 11, category: 'Giza-tour-small', title: 'Famous bazaars', value: SubImg11 },
     { id: 12, category: 'Giza-tour-small', title: 'Al moez street', value: SubImg12 },
 ]
 

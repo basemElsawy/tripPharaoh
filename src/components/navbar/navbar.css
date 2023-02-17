@@ -63,5 +63,5 @@
 .book-trip{
     justify-self:flex-end ;
     transition: all .3s;    
-    border: 2px solid var(--text-color);
+    
 }

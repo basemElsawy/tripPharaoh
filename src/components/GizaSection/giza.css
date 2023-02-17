@@ -1,0 +1,118 @@
+.giza-container {
+  background-image: url(/src/components/images/womanInDesert.jpg);
+  height: auto;
+  background-color: var(--bg-color);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: multiply;
+  position: relative;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-bottom: 100px;
+}
+
+.tour-imgs {
+  height: 100%;
+  width: 100%;
+}
+
+.trip-img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 200px;
+  width: 300px;
+}
+.tour-name {
+  position: absolute;
+  bottom: 0;
+  background-color: #212b4e85;
+  width: 100%;
+  padding: 10px;
+}
+
+.content-container {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-price {
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 5px;
+}
+
+.price {
+}
+
+.swiper-container {
+  width: 75%;
+  margin: auto;
+  height: 100%;
+  position: relative;
+}
+.slide {
+  height: 100%;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: var(--text-color);
+  font-weight: bold;
+  background-color: var(--bg-color);
+  padding: 20px;
+  border-radius: 10px 0px 0px 10px;
+}
+.swiper-button-prev::after {
+  border-radius: 0px 10px 10px 0px;
+}
+.fa-comment {
+  position: absolute;
+  top: 28%;
+  left: 16%;
+  z-index: 1;
+  transition: 0.3s all;
+}
+
+.fa-comment:hover {
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.fa-comment::after {
+  content: "All the prices in this section are based on single or double indviduals";
+  position: absolute;
+  width: 500px;
+  font-size: small;
+
+  top: 20%;
+  left: -10px;
+  font-family: "Poppins";
+  opacity: 0;
+  transition: 0.3s all;
+}
+
+.fa-comment:hover::after {
+  opacity: 1;
+  left: 0;
+}
+
+.giza-section-header {
+  font-size: var(--h1-font-size);
+  color: var(--text-color);
+}
+
+/* .giza-section-subheader{
+  font
+} */

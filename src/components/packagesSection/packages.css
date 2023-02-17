@@ -13,7 +13,7 @@
   background-attachment: fixed;
   background-position: center;
   background-color: var(--bg-color);
-  background-blend-mode: overlay;
+  background-blend-mode: multiply;
   padding: 50px;
   margin-bottom: 25px;
   color: white;
@@ -81,7 +81,7 @@
 }
 
 .show-offers {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .package-cards {
@@ -279,4 +279,8 @@
 .sub-images:hover::after {
   opacity: 0.7;
   transform: scale(1.05);
+}
+
+.sub-images:hover img {
+  opacity: 0.4;
 }
