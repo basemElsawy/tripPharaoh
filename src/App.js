@@ -3,6 +3,7 @@ import Navbar from './components/navbar/Navbar'
 import Home from './components/searchSection/Home'
 import Packages from './components/packagesSection/packages'
 import Giza from './components/GizaSection/Giza'
+import Cairo from './components/cairoSection/Cairo'
 const App = () => {
   return (
     <>
@@ -11,7 +12,7 @@ const App = () => {
         <Home className='home-sect' />
         <Packages />
         <Giza />
-
+        <Cairo />
       </main>
     </>
   )

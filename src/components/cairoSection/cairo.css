@@ -1,11 +1,12 @@
-.giza-container {
-  background-image: url(/src/components/images/womanInDesert.jpg),
+.cairo-container {
+  background-image: url(/src/components/images/Cairo\ trips/downtown.jpg),
     linear-gradient(90deg, #212b4e 75%, rgba(255, 255, 255, 0));
   height: auto;
-  background-color: var(--bg-color);
+  /* background-color: var(--bg-color); */
   background-size: cover;
+
   background-attachment: fixed;
-  background-position: center;
+  background-position: 100% 200%;
   background-blend-mode: overlay;
   position: relative;
   padding: 50px;
